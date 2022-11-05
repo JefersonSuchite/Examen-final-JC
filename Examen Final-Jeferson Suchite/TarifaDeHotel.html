@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Dulces Sueños</title>
+    <script src="https://kit.fontawesome.com/0ea474e709.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <p>JEFERSON SUCHITE 12681</p>
+<div id="container">
+<section id="content">
+    <header>
+        <br><br>Bienvenido al Hotel Dulces Sueños<br><br>
+        <br>Ingrese la Habitacion que Desee<br><br>
+    </header>
+    <p>IVA DE 12%</p> <br>
+    <P>INGUAT DE 10% </P><br><hr>
+
+    <form action="">
+        <br>
+        <label for="">Clasica: Q</label>
+        <input type="button" value="150" id="clasica" onclick="formula1()"><br><br>
+
+        <label for="">Doble: Q</label>
+        <input type="button" value="275" id="doble" onclick="formula2()"><br><br>
+
+        <label for="">Suite: Q</label>
+        <input type="button" value="450" id="suite" onclick="formula3()"><br><br>
+    </form>
+</section>
+
+<script>
+    var iva= 0.12
+    var inguat=0.10
+   
+    function formula1() {
+        var montoCLiva=(150*iva)
+        var montoCLing=(150*inguat)
+        alert ('Cantidad a pagar de: Q' + (150+montoCLiva+montoCLing) );
+    }
+    function formula2() {
+        var montoDBiva=(275*iva)
+        var montoDBing=(275*inguat)
+        alert ('Cantidad a pagar de: Q' + (275+montoDBiva+montoDBing))
+    }
+    function formula3() {
+        var montoSTiva=(450*iva)
+        var montoSTing=(450*inguat)
+        alert ('Cantidad a pagar de: Q' + (450+montoSTiva+montoSTing))
+    }
+</script>
+</div>
+</body>
+</html>
